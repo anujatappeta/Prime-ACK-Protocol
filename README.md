@@ -24,5 +24,14 @@ On the sender computer, open `sender.py` and update the `receiver` variable with
 ```python
 receiver = ("<RECEIVER_IP>", 9999)
 ```
-For example: "10.0.84.70". Then open a terminal in the sender folder and run python sender.py. The sender will send messages to the receiver, and display which messages were acknowledged:
+For example: "10.0.84.70". Then open a terminal in the sender folder and run python sender.py. The sender will send messages to the receiver, and display which messages were acknowledged
 
+## Future Improvements
+
+- Support larger payloads: Currently, messages are short; implement segmentation and reassembly for sending long files.
+
+- Reliable delivery: Add retransmission for lost prime-length messages to ensure guaranteed delivery.
+
+- Cross-network communication: Enable PAP to work over the internet using NAT traversal techniques.
+
+- Logging & analytics: Track message delivery statistics, ACK success rates, and network performance metrics for better monitoring and optimization.
