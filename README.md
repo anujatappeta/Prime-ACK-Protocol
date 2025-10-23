@@ -23,6 +23,7 @@ On the sender computer, open `sender.py` and update the `receiver` variable with
 
 ```python
 receiver = ("<RECEIVER_IP>", 9999)
+```
 For example: "10.0.84.70". Then open a terminal in the sender folder and run python sender.py. The sender will send messages to the receiver, and display which messages were acknowledged:
 Sent: 'Hello'
 Received: ACK 5
